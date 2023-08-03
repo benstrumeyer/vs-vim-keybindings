@@ -1,0 +1,177 @@
+{
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    // Fast line jumps in visual mode
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "J"
+            ],
+            "after": [
+                "5",
+                "j"
+            ]
+        },
+        {
+            "before": [
+                "K"
+            ],
+            "after": [
+                "5",
+                "k"
+            ]
+        },
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<Leader>",
+                "s",
+            ],
+            "commands": [
+                "workbench.action.files.save",
+            ]
+        },
+        {
+            "before": [
+                "J"
+            ],
+            "after": [
+                "5",
+                "j"
+            ]
+        },
+        {
+            "before": [
+                "K"
+            ],
+            "after": [
+                "5",
+                "k"
+            ]
+        },
+        // Navigate between windows
+        {
+            "before": [
+                "<C-h>"
+            ],
+            "after": [
+                "<C-w>",
+                "h"
+            ]
+        },
+        {
+            "before": [
+                "<C-j>"
+            ],
+            "after": [
+                "<C-w>",
+                "j"
+            ]
+        },
+        {
+            "before": [
+                "<C-k>"
+            ],
+            "after": [
+                "<C-w>",
+                "k"
+            ]
+        },
+        {
+            "before": [
+                "<C-l>"
+            ],
+            "after": [
+                "<C-w>",
+                "l"
+            ]
+        },
+        // TODO: Fix move active editor keybinding
+        {
+            "key": "ctrl+shift+h",
+            "command": "workbench.action.moveActiveEditorGroupLeft"
+        },
+        {
+            "key": "ctrl+shift+j",
+            "command": "workbench.action.moveActiveEditorGroupDown"
+        },
+        {
+            "key": "ctrl+shift+j",
+            "command": "workbench.action.moveActiveEditorGroupUp"
+        },
+        {
+            "key": "ctrl+shift+j",
+            "command": "workbench.action.moveActiveEditorGroupRight"
+        },
+        // Open new tabs
+        {
+            "before": [
+                "<C-n>",
+            ],
+            "commands": [
+                ":tabnew"
+            ]
+        },
+        {
+            "before": [
+                "<C-tab>"
+            ],
+            "commands": [
+                ":tabnext"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "t",
+                "p"
+            ],
+            "commands": [
+                ":tabprev"
+            ]
+        },
+        // Close all the tabs except the current tab
+        {
+            "before": [
+                "<Leader>",
+                "t",
+                "o"
+            ],
+            "commands": [
+                ":tabo"
+            ]
+        },
+        // Unhighlight searches
+        {
+            "before": [
+                "<Leader>",
+                "/"
+            ],
+            "commands": [
+                ":noh"
+            ]
+        },
+        // Leader w to close a tab
+        {
+            "before": [
+                "<Leader>",
+                "w"
+            ],
+            "commands": [
+                "workbench.action.closeActiveEditor"
+            ],
+        },
+        // {
+        //     "key": "ctrl+w s",
+        //     "command": "workbench.action.splitEditorDown"
+        // },
+        // {
+        //     "key": "ctrl+w v",
+        //     "command": "workbench.action.splitEditorRight"
+        // },
+    ],
+    "vim.leader": "<space>",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "editor.tabSize": 2,
+    "explorer.confirmDragAndDrop": false
+}
